@@ -16,5 +16,5 @@ python topics.py
 
 ##  Demo show:
 <p align="center">
-  < img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  < img width="460" height="300" src="https://github.com/zzzzx98/YouTube-video-recommendation-based-on-twitter/blob/main/6889_final/final.png">
 </p >
