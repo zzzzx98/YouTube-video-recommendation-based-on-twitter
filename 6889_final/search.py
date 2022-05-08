@@ -282,7 +282,7 @@ topic_word_top5_list = topic_word_top5[input_related_topics.take(1)[0][0]][:5].v
 print(topic_word_top5_list)
 
 
-api_key = 'AIzaSyCKeLpk8gyLXCp2hQ6wJLnyrwr-aJT7T7k'
+api_key = ''
 yt = YouTubeDataAPI(api_key)
 
 title=[]
