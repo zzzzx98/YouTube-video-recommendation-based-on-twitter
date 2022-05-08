@@ -44,7 +44,7 @@ topic_words_freq = temp.rdd.map(lambda x: [x[1], ('Topic' + str(x[0]), x[2])])
 topic_words_freq.take(5)
 
 # input the history tweets of the specific user from API
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAH14cAEAAAAAEIkgeVJ1B9pywjJjVBW%2Fg1CueNE%3DwjbqJUcYS126Lx9CVC6llPgYu462TiEG1uKKWKPJQ9xyazoXEg"
+bearer_token = ""
 
 
 def create_url1(name):
