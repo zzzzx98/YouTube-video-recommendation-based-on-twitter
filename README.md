@@ -5,7 +5,9 @@ This is our final project for ELEN6889, the instructor is Prof. Deepak Turaga, w
 
 ## requirement:
 pyspark
+
 python3.7
+
 tweepy=3.10.0
 
 
