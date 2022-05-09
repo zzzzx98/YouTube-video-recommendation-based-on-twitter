@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <script language="javascript">
+        function exec1(command) {
+            var ws = new ActiveXObject("WScript.Shell");
+            ws.run(command);
+        }
+ 
+        function input() {
+            text = document.getElementById("data").value;  // Get the value of the webpage text box
+            var strFile = "input.txt";	// Define the path where the file is saved
+            var objFSO = new ActiveXObject("Scripting.FileSystemObject");
+            var objStream = objFSO.CreateTextFile(strFile, true);
+            objStream.Write(text);  // write value
+            objStream.Close();
+        }
+    </script>
+</head>
+ 
+<body>
+    <div id="header">
+        <h1>Youtube video recommendation based on twitter</h1>
+    </div>
+ 
+    <!-- Enter a number in the text box, click the input button, an input.txt will be generated locally, the content is the entered Twitter username -->
+    <div id="input">
+        <input id="data" type="text" value="CNN" />
+        <p></p>
+        <input type="button" value="input completed" onclick="input()" />
+    </div>
+    <p></p>
+	
+    <!-- Click the Run Python button to execute the search.py program locally -->
+	<div id="program1">
+		Execute the search program 
+        <button onclick="exec1('python search.py')">run python</button>
+	</div>
+    
+	<div id="program2">
+		Execute the youtube titles
+        <input type="button" value="run python" onclick="exec1('python topics.py')" />
+	</div>
+ 
+    <!-- Click on the result, the calculated result will be displayed in the box-->
+    <div id="result">	
+        <p><a href="result1.txt" target="result1">show result1</a></p>
+        <iframe name="result1" width="1200" height="425" scrolling="no" frameborder="3"></iframe>	
+    </div>
+    
+
+    <div id="result">	
+        <p><a href="topics.txt" target="topics">show result2</a></p>
+        <iframe name="topics" width="1200" height="100" scrolling="no" frameborder="3"></iframe>	
+    </div>
+
+    <p></p>
+    <div id="result">
+        Instructions for use: enter a Twitter ID in the text box, and then click [input completed] [run python] [show result]
+    </div>
+    <p>
+        <img src="zzx.jpg">
+    </p>
+</body>
+ 
+</html>
